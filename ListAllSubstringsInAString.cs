@@ -8,15 +8,10 @@ class Program
         string inputString = Console.ReadLine();
 
         Console.WriteLine("All substrings:");
-        for (int i = 1; i <= inputString.Length; i++)
-        {
-            for (int j = 0; j <= inputString.Length - i; j++)
-            {
-                Console.WriteLine(inputString.Substring(j, i));
-            }
-        }
+        for (int length = 1; length <= inputString.Length; length++)
+            for (int start = 0; start <= inputString.Length - length; start++)
+                Console.WriteLine(inputString.Substring(start, length));
 
-        Console.WriteLine("Press any key to exit...");
         Console.ReadKey();
     }
 }

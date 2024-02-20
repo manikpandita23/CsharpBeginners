@@ -10,15 +10,12 @@ class Program
         for (int i = 0; i < numRows; i++)
         {
             long value = 1;
-            for (int j = 0; j <= i; j++)
-            {
+            for (int j = 0; j <= i; j++, value = value * (i - j) / (j + 1))
                 Console.Write(value + " ");
-                value = value * (i - j) / (j + 1);
-            }
+            
             Console.WriteLine();
         }
 
-        Console.WriteLine("Press any key to exit...");
         Console.ReadKey();
     }
 }

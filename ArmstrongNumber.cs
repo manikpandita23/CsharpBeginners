@@ -8,6 +8,8 @@ class Program
         for (int n = 1; n <= 1000; n++)
             if (IsArmstrong(n))
                 Console.WriteLine(n);
+
+        Console.ReadKey(); 
     }
 
     static bool IsArmstrong(int num)

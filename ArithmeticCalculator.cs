@@ -32,7 +32,6 @@ namespace SimpleCalculator
                     result = operand1 * operand2;
                     break;
                 case '/':
-                    // Check for division by zero
                     if (operand2 != 0)
                     {
                         result = operand1 / operand2;
@@ -44,7 +43,6 @@ namespace SimpleCalculator
                     }
                     break;
                 case '%':
-                    // Check for modulus with zero
                     if (operand2 != 0)
                     {
                         result = operand1 % operand2;
@@ -62,7 +60,6 @@ namespace SimpleCalculator
 
             Console.WriteLine($"Result: {operand1} {operation} {operand2} = {result}");
 
-            // Add a statement to prevent immediate closure
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
         }

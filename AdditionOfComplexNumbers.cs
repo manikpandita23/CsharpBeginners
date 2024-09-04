@@ -1,5 +1,4 @@
 using System;
-
 public struct Complex
 {
     public int real;
